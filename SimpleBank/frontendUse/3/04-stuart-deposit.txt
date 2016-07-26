@@ -1,0 +1,7 @@
+login
+Admin
+deposit
+Stuart Calverley
+4
+1000.00
+logout

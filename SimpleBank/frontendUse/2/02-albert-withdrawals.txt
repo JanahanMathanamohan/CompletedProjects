@@ -1,0 +1,7 @@
+login
+Standard
+Albert Fung
+withdrawal
+2
+1000.00
+logout
