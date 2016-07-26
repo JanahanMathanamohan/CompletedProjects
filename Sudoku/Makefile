@@ -1,0 +1,27 @@
+CC = clang
+CFLAGS = -Wall -Wextra -std=c99 -lpthread
+LFLAGS = -lpthread
+LIBS = 
+SOURCES = sudoku.c solver.c validate.c
+OBJECTS = $(subst .c,.o,$(SOURCES))
+EXE = jeopardy.exe
+.PHONY: clean help
+
+sudoku.exe : $(OBJECTS)
+	$(CC) $(CFLAGS) $^ $(LIBS) -o $@ 
+
+%.o : %.c
+	$(CC) $(CFLAGS) -c $< 
+
+all : $(EXE)
+
+clean:
+	rm -f $(OBJECTS) $(EXE) *~
+
+cleanup:
+	rm -f $(OBJECTS) *~
+
+help:
+	@echo "Valid targets:"
+	@echo "  all:    generates all binary files"
+	@echo "  clean:  removes .o and .exe files"
