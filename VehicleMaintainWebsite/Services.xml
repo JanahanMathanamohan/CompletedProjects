@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Services>
+	<Service >Standard Oil Change</Service>
+	<Service >Synthetic Blend Oil Change</Service>
+	<Service >Full Synthetic Oil Change</Service>
+	<Service >Tire Alignment</Service>
+	<Service >Brake Service</Service>
+	<Service >Fuel Filter Service</Service>
+	<Service >Spark Plug Service</Service>
+</Services>
